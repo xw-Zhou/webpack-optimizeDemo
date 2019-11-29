@@ -1,0 +1,64 @@
+@import '../../styles/theme/index.less';
+
+
+.skin-wrap{
+  position: absolute;
+  right:0;
+  top:0;
+  box-shadow: 0 -5px 30px rgba(0,0,0,.2);
+  height:100%;
+  width:120px;
+  box-sizing: border-box;
+  .skin-root{
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+    font-size:14px;
+    user-select: none;
+    &:hover{
+      cursor: pointer;
+    }
+    >i{
+      font-size:20px;
+    }
+    >span{
+      margin-left:5px;
+    }
+  }
+
+  .skin-dropDown{
+    width:100%;
+    background:#fff;
+    opacity:0;
+    position: relative;
+    top:-10px;
+    height:0;
+    overflow: hidden;
+    transition: top 0.2s,opacity 0.2s;
+    box-shadow: 0 2px 40px rgba(0,0,0,.4);
+
+    .change-theme{
+      display: flex;
+      padding:10px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      >li{
+        cursor: pointer;
+        width:20px;
+        height:20px;
+        background: #000;
+        margin:5px;
+      }
+    }
+
+    .sign-out{
+      font-size:16px;
+      padding:10px;
+      text-align: center;
+      >span{
+        cursor: pointer;
+      }
+    }
+
+  }
+}

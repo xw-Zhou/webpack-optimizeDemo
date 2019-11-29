@@ -1,0 +1,75 @@
+@import '../../styles/theme/index.less';
+
+.aside{
+  box-sizing: border-box;
+  height:calc(100vh - 70px);
+  box-shadow: 3px 0 10px #ccc;
+  position: relative;
+  z-index: 2;
+  padding:30px 0;
+  overflow: hidden;
+  &:hover{
+    overflow: auto;
+  }
+  li{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  li:hover{
+    background:#f9f9f9;
+  }
+  >ul>li:first-child{
+    border-top:none;
+  }
+  >ul>li:last-child{
+    border-bottom:1px solid #f3f3f3;
+  }
+  >ul>li{
+    border-top:1px solid #f3f3f3;
+  }
+  >ul>li>ul>li{
+    border-bottom:1px solid #f3f3f3;
+  }
+  >ul>li>ul>li:last-child{
+    border-bottom:none;
+  }
+}
+.spans{
+  display: inline-block;
+  font-weight: bold;
+  border-radius:3px;
+  text-align:center;
+  float:right;
+  margin-right:5px;
+}
+
+
+
+
+
+@media screen and (min-width: 576px){//如果文档宽度大于576px
+  .asideFixed{
+
+  }
+}
+@media screen and (min-width: 768px){//如果文档宽度大于768px
+  .asideFixed{
+    position: fixed;
+    left:0;
+    height:100vh;
+    width:25%;
+  }
+}
+@media screen and (min-width: 992px){//如果文档宽度大于992px
+  .asideFixed{
+    position: fixed;
+    left:0;
+    height:100vh;
+    width:16.66666667%;
+  }
+}
+
+
+
+
+
