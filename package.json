@@ -19,7 +19,7 @@
     "antd": "3.8.2",
     "antd-theme-webpack-plugin": "^1.2.0",
     "autoprefixer": "^9.4.7",
-    "axios": "^0.18.0",
+    "axios": "^1.6.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-equire": "^1.1.1",
     "babel-plugin-import": "^1.11.0",
